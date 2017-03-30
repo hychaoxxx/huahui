@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <audio></audio>
     <hello></hello>
     <list></list>
   </div>

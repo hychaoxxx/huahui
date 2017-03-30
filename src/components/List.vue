@@ -3,7 +3,7 @@
       <div class="list-item" v-for="(item,index) in words">
         <div class="list-item-top">
             <span class="words">{{ item.word }}</span>
-            <span class="play" v-on:click="" :title="item.word"></span>
+            <a :href="'http://dict.youdao.com/dictvoice?audio='+item.word+'&type=1'" class="play"></a>
         </div>
         <div class="pronunciation">
             <span class="right">✅： {{ item.right }}</span>
@@ -82,7 +82,7 @@ li {
 }
 
 a {
-  color: #42b983;
+  display: inline-flex;
 }
 .list-item-top{
     display: flex;
